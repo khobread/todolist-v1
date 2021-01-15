@@ -12,6 +12,7 @@ app.set('view engine', 'ejs'); //comes after express app
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
 app.use(express.static("public"));
 
 app.get("/", function(req, res) {
